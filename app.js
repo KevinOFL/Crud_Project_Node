@@ -1,15 +1,15 @@
 const express = require('express')
+
 //iniciando uma const e atribuindo o express a ela
-
 const app = express()
+
 //porta manual do serve
-
 const port = 8015
+
 //Chamando a conexão do banco de dados
-
 const db = require('./models/db')
-//Chamando o models de cadastro no banco de dados
 
+//Chamando o models de cadastro.
 const User = require('./models/User')
 
 //Aqui preparamos o projeto pra receber valores em formato JSON.
@@ -21,7 +21,9 @@ app.get('/', async (req, res) => {
     res.status()
 })
 
+//Porta de cadastros
 app.post('/cadastrar', async (req, res) => {
+    
     //console.log(req.body)
 
     await User.create(req.body)
