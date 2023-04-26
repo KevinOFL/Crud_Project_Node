@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize')
 
 //Aqui fazemos a conexão com nosso banco de dados (no meu caso local)
-//Segue a linha de como criar a conexão com sequealize -> "banco de dados" - "user" - "senha do bd" {"host" - "qual tipo de bd"}
-const sequelize = new Sequelize("db","root", "senha", {
+//Segue a linha de como criar a conexão com sequelize -> "banco de dados" - "user" - "senha do bd" {"host" - "qual tipo de bd"}
+const sequelize = new Sequelize("dbserve","root", "!=Tree8987", {
     host: "localhost",
     dialect: "mysql"
 } ) 

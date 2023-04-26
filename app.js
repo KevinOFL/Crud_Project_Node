@@ -42,6 +42,18 @@ app.post('/cadastrar', async (req, res) => {
     //res.send('Pagina cadastrar')
 })
 
+app.get('/consultar', async (req, res) => {
+    //Abaixo está a função de Select * from users
+    const users = await User.findAll()
+
+    //Aqui me entrega true qaundo o a requisição ocorrer corretamente.
+    console.log(users.every(user => user instanceof User)); // true
+
+    //E aqui uma send http me entregando todos os dados do bd.
+    res.send(JSON.stringify(users, null, 2))
+})
+
+
 app.listen(port, ()=>{
     console.log(`Servidor iniciado: http://localhost:${port} `)
 })

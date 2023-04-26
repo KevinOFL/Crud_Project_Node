@@ -1,5 +1,5 @@
 ## Crud Básico - Back-end com node.js
-## Ultilizamos JavaScript como linguagem para programar, framework express e a biblioteca Sequealize.
+## Ultilizamos JavaScript como linguagem para programar, framework express e a biblioteca Sequelize.
 
 Começamos digitando 
 ## npm init
